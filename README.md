@@ -22,20 +22,22 @@ The Entertainment App is a full-stack application designed to provide users with
 
 1. **Clone the Repository**: Start by cloning the Entertainment App repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/entertainment-app.git
+   git clone https://github.com/manishchauhan8222/entertainment-app.git
    ```
-   
 2. **Navigate to the Backend Directory**: Move into the `backend` directory of the project.
+
    ```bash
    cd entertainment-app/backend
    ```
 
 3. **Install Dependencies**: Install the necessary dependencies using npm.
+
    ```bash
    npm install
    ```
 
 4. **Configure Environment Variables**: Create a `.env` file based on the provided `.env.example` file. Provide your MongoDB URI and TMDB API key in the `.env` file.
+
    ```bash
     MONGODB_URL= "your mongodb url"
     SECRET_TOKEN= "your secret token for user authentication"
@@ -43,6 +45,7 @@ The Entertainment App is a full-stack application designed to provide users with
    ```
 
 5. **Start the Server**: Run the backend server.
+
    ```bash
    npm start
    ```
@@ -52,22 +55,26 @@ The Entertainment App is a full-stack application designed to provide users with
 ### Frontend Setup
 
 1. **Navigate to the Frontend Directory**: Move into the `frontend` directory of the project.
+
    ```bash
    cd ../frontend
    ```
 
 2. **Install Dependencies**: Install the necessary dependencies using npm.
+
    ```bash
    npm install
    ```
 
 3. **Configure Environment Variables**: Create a `.env` file in the frontend directory and specify the URL of the backend server. For example:
+
    ```bash
    REACT_APP_BACKEND_URL= "your live backend server"
    VITE_APP_TMDB_API_KEY= "your tmdb api key for image"
    ```
 
 4. **Start the Application**: Run the frontend application.
+
    ```bash
    npm run dev
    ```
@@ -75,6 +82,7 @@ The Entertainment App is a full-stack application designed to provide users with
 5. **Access the Application**: Open your web browser and navigate to the specified URL (default: `http://localhost:3000`) to access the Entertainment App.
 
 By following these steps, you should have both the backend server and frontend application running locally, allowing you to explore the features of the Entertainment App.
+
 ## Project Structure
 
 ### Backend
@@ -94,25 +102,14 @@ By following these steps, you should have both the backend server and frontend a
 - **Utils**: Utility functions such as `cookieActionUtils.js` for managing cookies and `customToast.js` for displaying toast notifications.
 
 ### Deployment
+
 - **Frontend** : https://entertainment-app-frontend-110.onrender.com
 - **Backend** : https://entertainment-app-backend-110.onrender.com
 
 ### API Documentation
+
 You can visit API documentation from [here](https://documenter.getpostman.com/view/29682764/2sA2xmVB3S)
 
 ### Database Design
+
 You can visit Database Design from [here](https://docs.google.com/document/d/1iWpAIfILl7cN4DK83MJfC0teh3CVMQW79ts3X503EkQ/edit?usp=sharing)
-
-## Note
-If tmdb api is not working then change your system dns according to [this](https://www.isitdownrightnow.com/themoviedb.org.html)
-
-## Contributing
-
-Contributions are welcome! Please follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
-
